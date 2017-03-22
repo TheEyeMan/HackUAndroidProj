@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/registerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_ttl_registration"
+            android:textSize="@dimen/app_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/registerEtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress"
+            android:hint="@string/register_hint_email"
+            android:textColor="@color/et_hint_regular_color"
+            android:textSize="@dimen/et_text" />
+
+        <EditText
+            android:id="@+id/registerEtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/register_hint_username"
+            android:inputType="text"
+            android:textColor="@color/et_hint_regular_color"
+            android:textSize="@dimen/et_text" />
+        <EditText
+            android:id="@+id/registerEtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/register_hint_password"
+            android:inputType="textPassword"
+            android:textColor="@color/et_hint_regular_color"
+            android:textSize="@dimen/et_text" />
+        <EditText
+            android:id="@+id/registerEtRepeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/register_hint_repeat_password"
+            android:inputType="textPassword"
+            android:textColor="@color/et_hint_regular_color"
+            android:textSize="@dimen/et_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/registerBtnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="0.9"
+            android:background="@color/btn_background_color"
+            android:text="@string/register_btn_register"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/btn_text"
+            android:layout_margin="@dimen/btn_margin"/>
+
+        <Button
+            android:id="@+id/registerBtnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:background="@color/btn_background_color"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/btn_text_color"
+            android:textSize="@dimen/btn_text"
+            android:layout_margin="@dimen/btn_margin"/>
+
+    </LinearLayout>
+
+</LinearLayout>
